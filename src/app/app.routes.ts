@@ -21,6 +21,10 @@ export const routes: Routes = [
         loadComponent: ()=> import('./blog/blog').then(m => m.Blog)
     },
     {
+        path: 'blog/:id',
+        loadComponent: ()=> import('./blog-detail/blog-detail').then(m => m.BlogDetail)
+    },
+    {
         path: 'login',
         loadComponent: ()=> import('./login/login').then(m => m.Login)
     },
